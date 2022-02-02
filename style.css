@@ -1,0 +1,103 @@
+/* Body
+Pick a nice background-color, font-family, color, font-size and line-height for the <body>.
+Setting these font rules at the body-level will apply them on all basic text tags (<p>, <li>, etc.).
+
+Headers
+Choose a nice color and font-family for headers (<h1>, <h2>, <h3>)
+Choose harmonious font-size and line-height for headers
+Hint: small headers are more elegant. If you check out any website
+(Medium, Airbnb, etc.), you’ll see that the font-size of their headers is quite small.
+Links
+Change the color & text-decoration of all the links
+Add hover effects to links using the pseudo-class a:hover. */
+
+body {
+  background-color: rgb(251, 248, 241);
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 15px;
+  color: rgba(36, 36, 36, 1);
+  line-height: 0.8;
+  position: relative;
+}
+h1, h2{
+  font-size: 25px;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+h2{
+  font-size: 18px;
+}
+h3{
+  color:mediumpurple
+}
+#social-media-icons{
+  width: 50px;
+}
+a{
+  color :blue
+}
+a:hover{
+  color:black ;
+}
+
+.container {
+margin: 0 auto;
+width: 700px;
+}
+
+
+.img-circle{
+  border-radius: 50%;
+}
+
+.list-inline {
+  display: inline-block;
+  list-style: none;
+}
+
+ul {
+  padding: 0px;
+}
+
+#img-banner{
+  width: 100%;
+  margin:0 auto;
+  z-index:-1;
+  position: absolute;
+}
+
+#banner{
+  padding: 0px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.card {
+background-color: white;
+padding: 10px;
+border-radius: 8px;
+margin: 20px 20px;
+text-align: center;
+box-shadow: 0px 10px 30px rgb(0 0 0 / 10%)
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
